@@ -1,0 +1,32 @@
+.widgetContainer {
+    background: #182c3d;
+    width:80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    &__head {
+      border-bottom: solid 1px rgba(100, 100, 100, 0.3);
+      padding: 10px;
+    }
+    &__heading {
+      font-size: 12px;
+      text-transform: uppercase;
+      span {
+        font-weight: normal;
+        color: #a0a9af;
+      }
+    }
+    &__body{
+      display: flex;
+      padding: 2px 5px 5px;
+      height: 472px;
+      overflow: hidden;
+    }
+    
+    &__column {
+      flex: 50%;  
+    }
+    
+}

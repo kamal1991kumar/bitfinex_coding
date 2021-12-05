@@ -1,0 +1,26 @@
+.widgetHead{
+    font-size: 11px;
+    display: flex;
+    &__th {
+      line-height: 18px;
+      flex: 25%;
+      padding: 0 10px;
+      text-align: right;
+      color: #a0a9af;
+    }
+    $el:&;
+    &--bids {
+        #{$el}__th {
+          &:first-child {
+            text-align: center;
+          }
+        }
+      }
+    &--asks {
+        #{$el}__th {
+            &:last-child {
+            text-align: center;
+            }
+        }
+    }
+} 
